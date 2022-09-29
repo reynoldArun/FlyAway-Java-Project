@@ -37,16 +37,10 @@ public class LoginForm extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		PrintWriter out = response.getWriter();
-		out.println("<html><body>");
-		
 		String Username = request.getParameter("username");
 		String Password = request.getParameter("password");
+		response.sendRedirect("dashboard.html");
 		
-	
-		out.println("Welcome to FlyAway:"+Username);
-	
-		
-		out.println("</body></html>");
 	}
 
 }
