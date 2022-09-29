@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Fly Away Ticket Booking</title>
+</head>
+<style>
+	div {
+	display:flex;
+	justify-content:space-between;
+	}
+	
+	a {
+	text-decoration:none;
+	}
+	
+	h1 {
+	font-size:65px;
+	text-align:center;
+	}
+	
+	.headcenter {
+	margin: 0px 25px;
+	}
+	
+</style>
+<body>
+	<h1>Book Flight Ticket.</h1>
+	<div>
+	<h2 class="headcenter">Fly Anywhere. Fly Everywhere.</h2>
+	<h2>
+	<a href="adminLogin.html">Admin Login</a>
+	</h2>
+	</div>
+	<hr>
+	<form name="SearchFlights" method="GET" action="SearchFlights">
+	From: <input type="text" name="source" placeholder="City or airport"/>
+	To: <input type="text" name="destination" placeholder="City or airport"/>
+	<button style="background-color:orange" type="submit">Search Flights</button>
+	</form>
+</body>
+</html>
